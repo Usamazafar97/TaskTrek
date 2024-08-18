@@ -5,6 +5,8 @@ function CreateTodo(params) {
   const [count, setCount] = useState(1); // 0, default value
   const [newTitle, setTitle] = useState("Write title here");
 
+  const tasks = ["Task 1", "Task 2", "Task 4"];
+
   //   function checkIfEmpty() {
   //     return count != 0 ? `Tasks : ${count}` : "No tasks available";
   //   }
@@ -33,6 +35,12 @@ function CreateTodo(params) {
       {/* <h1>{checkIfEmpty()}</h1> */}
       {/* <button onClick={onClickButton} disabled={setDisability()}> */}
       <button onClick={onClickButton}>Add me</button>
+
+      <ul>
+        {tasks.map((task) => (
+          <li key={task}>{task}</li>
+        ))}
+      </ul>
     </React.Fragment>
   );
 }
