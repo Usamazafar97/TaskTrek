@@ -1,8 +1,30 @@
-# React + Vite
+# TaskTrek
+**Effortlessly manage your tasks with tags and statuses.**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Live Demo
+[![Watch the demo](https://github.com/user-attachments/assets/e2a26121-728a-4d6f-b257-8382f1758173)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+- Task management with status tracking (To Do, Doing, Done)
+- Tagging system (e.g., HTML, CSS)
+- Intuitive UI for seamless task management
+
+## Installation
+1. Clone the repository: `git clone https://github.com/yourusername/TaskTrek.git`
+2. Navigate to the project directory: `cd TaskTrek`
+3. Install dependencies: `npm install`
+4. Run the project: `npm start`
+
+## Contributing
+Contributions are welcome! Please fork the repository and submit a pull request.
+
+## License
+This project is licensed under the MIT License.
+
+![GitHub stars](https://img.shields.io/github/stars/Usamazafar97/TaskTrek)
+![GitHub license](https://img.shields.io/github/license/Usamazafar97/TaskTrek)
+
+## Contact
+Created by Usama Zafar - feel free to contact me!
+
