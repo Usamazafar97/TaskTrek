@@ -2,14 +2,10 @@ import React, { useState } from "react";
 import "./TaskForm.css";
 import Tag from "./Tag";
 
-const TaskForm = () => {
-  // const [taskData, setTask] = useState("");
-  // const [tagData, setTagData] = useState("");
-  // const [taskStatusData, setTaskStatusData] = useState("");
-
+const TaskForm = ({ setTasks }) => {
   const [taskData, setTaskData] = useState({
     name: "",
-    status: "todo",
+    status: "To do",
     tags: [],
   });
 
@@ -35,7 +31,7 @@ const TaskForm = () => {
     }
   };
 
-  console.log(taskData.tags);
+  // console.log(taskData.tags);
 
   const selectedTags = (tag) => {
     return taskData.tags.some((item) => tag === item);
@@ -47,7 +43,18 @@ const TaskForm = () => {
 
   const handleSubmitDData = (event) => {
     event.preventDefault();
-    console.log(taskData);
+    // console.log(taskData);
+
+    setTasks((prev) => {
+      return [...prev, taskData];
+    });
+
+    // reset the UI to normal
+    setTaskData({
+      name: "",
+      status: "To do",
+      tags: [],
+    });
   };
 
   return (
@@ -56,6 +63,7 @@ const TaskForm = () => {
         <input
           type="text"
           name="name"
+          value={taskData.name}
           className="task_input"
           placeholder="Enter your task"
           onChange={handleTaskData}
@@ -88,12 +96,13 @@ const TaskForm = () => {
           <div>
             <select
               name="status"
+              value={taskData.status}
               className="task_status"
               onChange={handleTaskData}
             >
-              <option value="todo">To do</option>
-              <option value="doing">Doing</option>
-              <option value="done">Done</option>
+              <option value="To do">To do</option>
+              <option value="Doing">Doing</option>
+              <option value="Done">Done</option>
             </select>
 
             <button type="submit" className="task_submit">
