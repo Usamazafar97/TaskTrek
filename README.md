@@ -2,7 +2,7 @@
 **Effortlessly manage your tasks with tags and statuses.**
 
 ## Live Demo
-[![Watch the demo](https://github.com/user-attachments/assets/e2a26121-728a-4d6f-b257-8382f1758173)
+(https://github.com/user-attachments/assets/e2a26121-728a-4d6f-b257-8382f1758173)
 
 
 ## Features
